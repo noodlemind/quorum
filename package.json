@@ -1,0 +1,21 @@
+{
+  "name": "quorum",
+  "version": "0.0.0",
+  "private": true,
+  "type": "module",
+  "packageManager": "pnpm@11.19.0",
+  "engines": {
+    "node": ">=22.13.0"
+  },
+  "scripts": {
+    "dev": "concurrently --kill-others-on-fail --names room,coordinator,participant \"pnpm --filter @quorum/room-service dev\" \"pnpm --filter @quorum/coordinator dev\" \"pnpm --filter @quorum/participant dev\"",
+    "build": "pnpm -r --if-present build",
+    "typecheck": "pnpm -r --if-present typecheck",
+    "test": "pnpm -r --if-present test",
+    "check": "pnpm typecheck && pnpm test && pnpm build"
+  },
+  "devDependencies": {
+    "concurrently": "catalog:",
+    "typescript": "catalog:"
+  }
+}

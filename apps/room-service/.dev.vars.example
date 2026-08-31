@@ -1,0 +1,2 @@
+COORDINATOR_ORIGIN=http://localhost:5173
+PARTICIPANT_ORIGIN=http://localhost:5174

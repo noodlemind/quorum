@@ -203,7 +203,7 @@ This prototype demonstrates consent-scoped capability publication, not cryptogra
 
 ## Run locally
 
-Requirements: Node.js 20+ and pnpm.
+Requirements: Node.js 22.13+ and pnpm.
 
 ```bash
 corepack enable

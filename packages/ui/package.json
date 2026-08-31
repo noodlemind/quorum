@@ -1,0 +1,25 @@
+{
+  "name": "@quorum/ui",
+  "version": "0.0.0",
+  "private": true,
+  "type": "module",
+  "sideEffects": ["./src/styles.css"],
+  "exports": {
+    "./card": "./src/card.tsx",
+    "./metric": "./src/metric.tsx",
+    "./status-badge": "./src/status-badge.tsx",
+    "./styles.css": "./src/styles.css"
+  },
+  "scripts": {
+    "build": "tsc -p tsconfig.json",
+    "typecheck": "tsc -p tsconfig.json"
+  },
+  "dependencies": {
+    "@quorum/protocol": "workspace:*",
+    "react": "catalog:"
+  },
+  "devDependencies": {
+    "@types/react": "catalog:",
+    "typescript": "catalog:"
+  }
+}
